@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "166ed746-d604-44ed-ac50-622a1135c9f2",
+		"name": "Amigos_code",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addPerson",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Pedro Henrique\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/person",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"person"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/person",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"person"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePerson",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Pedro Henrique Marcon de Moraes\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/person/7670913f-fb7a-4b53-b637-3fd8268c0987",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"person",
+						"7670913f-fb7a-4b53-b637-3fd8268c0987"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPersonById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/person/7670913f-fb7a-4b53-b637-3fd8268c0987",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"person",
+						"7670913f-fb7a-4b53-b637-3fd8268c0987"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePersonById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/person/d5060d44-e739-4b4c-83b9-05e74521e243",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"person",
+						"d5060d44-e739-4b4c-83b9-05e74521e243"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
